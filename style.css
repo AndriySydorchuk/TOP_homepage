@@ -62,26 +62,40 @@ body {
   filter: var(--drop-shadow);
 }
 
-.header-img {
+.header-img-container {
   display: flex;
-  align-items: end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
-  font-size: 64px;
-  font-weight: bold;
+  position: relative;
+
+  max-height: fit-content;
+}
+
+.header-img {
+  max-height: 90vh;
+  box-shadow: var(--box-shadow);
+}
+
+.header-img-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  min-width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 54px;
   font-family: var(--font-playfair);
 
   color: var(--font-color-tertiary);
-  background-color: var(--bg-color-primary);
-
-  min-height: 100%;
-  min-width: 30vw;
-
-  padding: 30px;
 
   text-shadow: var(--text-shadow);
 
-  background-image: url(./assets/placeholder.svg);
+  padding: 20px 0;
 }
 
 .about-container {
@@ -110,6 +124,18 @@ body {
   height: 50px;
 }
 
+a.github-link {
+  background-image: url(./assets/github.svg);
+}
+
+a.linkedin-link {
+  background-image: url(./assets/linkedin.svg);
+}
+
+a.x-link {
+  background-image: url(./assets/twitter-x.svg);
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -126,7 +152,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 
-  gap: 40px;
+  gap: 50px;
 }
 
 .card {
@@ -134,10 +160,16 @@ body {
   flex-direction: column;
 
   box-shadow: var(--box-shadow);
+
+  max-height: min-content;
+}
+
+.card-img {
+  max-width: 100%;
 }
 
 .card-info {
-  padding: 40px;
+  padding: 30px 40px 50px;
 }
 
 .card-header {
@@ -155,8 +187,12 @@ body {
   height: 50px;
 }
 
+a.external-link {
+  background-image: url(./assets/external-link.svg);
+}
+
 .card-text {
-  margin-top: 20px;
+  margin-top: 40px;
 
   color: var(--font-color-secondary);
 
@@ -170,7 +206,7 @@ body {
   background-color: var(--bg-color-secondary);
 
   margin: 0 -80px;
-  padding: 100px 80px;
+  padding: 100px 80px 80px;
 
   color: var(--font-color-tertiary);
 }
@@ -199,6 +235,32 @@ body {
   background-repeat: no-repeat;
 
   padding-left: 60px;
+
+  display: flex;
+  align-items: center;
+}
+
+.phone-contact {
+  background-image: url(./assets/telephone-white.svg);
+}
+
+.mail-contact {
+  background-image: url(./assets/mail-white.svg);
+}
+
+.footer-links {
+  margin-top: 60px;
+}
+
+.footer-img {
+  min-width: 40vw;
+
+  box-shadow: var(--box-shadow);
+}
+
+.footer .icon {
+  width: 70px;
+  height: 70px;
 }
 
 .title-primary {
@@ -217,5 +279,8 @@ body {
   background-image: url(./assets/placeholder.svg);
   background-size: cover;
 
+  display: inline-block;
+
   width: 50px;
+  height: 50px;
 }
