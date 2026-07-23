@@ -381,6 +381,10 @@ a.external-link {
 }
 
 @media (max-width: 1000px) {
+  .container::before {
+    min-height: 50vh;
+  }
+
   .header {
     margin-bottom: 220px;
   }
@@ -596,10 +600,6 @@ a.external-link {
   .container {
     padding: 30px;
     padding-bottom: 0;
-  }
-
-  .container::before {
-    min-height: 50vh;
   }
 
   .hero-img-caption {
