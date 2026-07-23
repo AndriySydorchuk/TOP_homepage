@@ -30,8 +30,8 @@ body {
 }
 
 .container {
-  display: grid;
-  grid-template-rows: minmax(min-content, 90vh) 1fr minmax(min-content, 100vh);
+  display: flex;
+  flex-direction: column;
 
   gap: 100px;
   padding: 50px 80px 0;
@@ -46,82 +46,66 @@ body {
   top: 0;
   left: 0;
 
-  min-width: 100%;
-  min-height: 950px;
+  width: 100%;
+  min-height: 100vh;
 
   background-color: var(--bg-color-secondary);
 
-  clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 100%);
 
   z-index: -1;
 }
 
-.header {
-  display: flex;
-
-  filter: var(--drop-shadow);
+.hero {
+  min-height: 90vh;
 }
 
-.header-img-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.hero-img {
+  background-image: url(./assets/placeholder-about.jpg);
+  background-size: cover;
 
-  position: relative;
+  float: left;
 
-  max-height: fit-content;
-}
-
-.header-img {
-  max-height: 90vh;
-  box-shadow: var(--box-shadow);
-}
-
-.header-img-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-
-  min-width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 54px;
-  font-family: var(--font-playfair);
+  height: 90vh;
+  width: 30%;
 
   color: var(--font-color-tertiary);
 
+  font-size: 80px;
+  font-family: var(--font-playfair);
+
   text-shadow: var(--text-shadow);
 
-  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  padding-bottom: 20px;
+  margin-right: 80px;
+
+  box-shadow: var(--box-shadow);
 }
 
-.about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.hero-content {
+  padding: 50px 80px;
+  margin-left: 30%;
 
-  padding: 50px;
-  margin: 60px 0;
+  transform: translateY(85px);
+
+  box-shadow: var(--box-shadow);
 
   background-color: var(--bg-color-primary);
 }
 
-.about-text {
+.hero-text {
+  color: var(--font-color-secondary);
   font-size: 36px;
 
-  color: var(--font-color-secondary);
+  margin: 50px 0;
 }
 
-.about-links {
-  display: flex;
-  justify-content: end;
-
-  gap: 10px;
-
-  height: 50px;
+.hero-links {
+  text-align: end;
 }
 
 a.github-link {
