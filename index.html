@@ -16,9 +16,20 @@
     <div class="container">
       <header class="header">
         <div class="hero">
-          <div class="hero-img">Fullname</div>
+          <picture class="hero-img">
+            <source
+              media="(max-width: 1000px)"
+              srcset="./assets/placeholder-about-medium.jpg"
+            />
+            <source
+              media="(max-width: 1700px)"
+              srcset="./assets/placeholder-3.jpg"
+            />
+            <img src="./assets/placeholder-about.jpg" alt="" />
+            <p class="hero-img-caption">Fullname</p>
+          </picture>
           <div class="hero-content">
-            <h2 class="title-primary">About me</h2>
+            <h2 class="hero-title title-primary">About me</h2>
             <p class="hero-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
               asperiores dolorum ratione molestias quis fuga nemo placeat
@@ -161,7 +172,17 @@
             <a href="#" class="x-link icon"></a>
           </div>
         </div>
-        <img src="./assets/placeholder-3.jpg" class="footer-img" />
+        <picture class="footer-img">
+          <source
+            media="(max-width: 1000px)"
+            srcset="./assets/placeholder-2.jpg"
+          />
+          <source
+            media="(max-width: 1700px)"
+            srcset="./assets/placeholder-about-small.jpg"
+          />
+          <img src="./assets/placeholder-3.jpg" alt="" />
+        </picture>
       </footer>
     </div>
   </body>
