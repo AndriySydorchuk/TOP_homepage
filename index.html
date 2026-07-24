@@ -15,19 +15,27 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="hero">
-          <picture class="hero-img">
-            <source
-              media="(max-width: 1000px)"
-              srcset="./assets/placeholder-about-medium.jpg"
-            />
-            <source
-              media="(max-width: 1700px)"
-              srcset="./assets/placeholder-3.jpg"
-            />
-            <img src="./assets/placeholder-about.jpg" alt="" />
+        <section class="hero">
+          <div class="hero-img">
+            <picture>
+              <source
+                media="(max-width: 500px)"
+                srcset="./assets/hero-xsm.jpg"
+              />
+              <source
+                media="(max-width: 1000px)"
+                srcset="./assets/hero-sm.jpg"
+              />
+              <source
+                media="(max-width: 1700px)"
+                srcset="./assets/hero-md.jpg"
+              />
+
+              <img src="./assets/hero-lg.jpg" alt="" />
+            </picture>
             <p class="hero-img-caption">Fullname</p>
-          </picture>
+          </div>
+
           <div class="hero-content">
             <h2 class="hero-title title-primary">About me</h2>
             <p class="hero-text">
@@ -40,118 +48,218 @@
               expedita inventore tenetur ipsa natus! Lorem ipsum dolor sit amet
               consectetur adipisicing elit.
             </p>
+
             <div class="hero-links">
               <a href="#" class="github-link icon" target="_blank"></a>
               <a href="#" class="linkedin-link icon" target="_blank"></a>
               <a href="#" class="x-link icon" target="_blank"></a>
             </div>
           </div>
-        </div>
+        </section>
       </header>
+
       <main class="main">
         <h2 class="main-title title-primary">My work</h2>
+
         <div class="main-grid">
-          <div class="card">
-            <img class="card-img" src="./assets/placeholder-1.jpg" alt="" />
+          <article class="card">
+            <img
+              class="card-img"
+              src="./assets/project-md.jpg"
+              srcset="
+                ./assets/project-xlg.jpg 1830w,
+                ./assets/project-lg.jpg  1610w,
+                ./assets/project-xmd.jpg 1350w,
+                ./assets/project-sm.jpg   840w,
+                ./assets/project-xsm.jpg  581w
+              "
+              sizes="(min-width: 1720px) calc(33.28vw - 85px), (min-width: 1020px) calc(50vw - 80px), (min-width: 540px) calc(100vw - 120px), (min-width: 500px) calc(-100vw + 920px), calc(88.89vw - 27px)"
+              alt=""
+            />
+
             <div class="card-info">
               <div class="card-header">
                 <h3 class="card-title title-secondary">Project name</h3>
+
                 <div class="card-links">
                   <a href="#" class="github-link icon" target="_blank"></a>
                   <a href="#" class="external-link icon" target="_blank"></a>
                 </div>
               </div>
+
               <p class="card-text">
                 Short description of the project. Just a couple sentences will
                 do.
               </p>
             </div>
-          </div>
-          <div class="card">
-            <img class="card-img" src="./assets/placeholder-2.jpg" alt="" />
+          </article>
+
+          <article class="card">
+            <img
+              class="card-img"
+              src="./assets/project-md.jpg"
+              srcset="
+                ./assets/project-xlg.jpg 1830w,
+                ./assets/project-lg.jpg  1610w,
+                ./assets/project-xmd.jpg 1350w,
+                ./assets/project-sm.jpg   840w,
+                ./assets/project-xsm.jpg  581w
+              "
+              sizes="(min-width: 1720px) calc(33.28vw - 85px), (min-width: 1020px) calc(50vw - 80px), (min-width: 540px) calc(100vw - 120px), (min-width: 500px) calc(-100vw + 920px), calc(88.89vw - 27px)"
+              alt=""
+            />
+
             <div class="card-info">
               <div class="card-header">
                 <h3 class="card-title title-secondary">Project name</h3>
+
                 <div class="card-links">
                   <a href="#" class="github-link icon" target="_blank"></a>
                   <a href="#" class="external-link icon" target="_blank"></a>
                 </div>
               </div>
+
               <p class="card-text">
                 Short description of the project. Just a couple sentences will
                 do.
               </p>
             </div>
-          </div>
-          <div class="card">
-            <img class="card-img" src="./assets/placeholder-3.jpg" alt="" />
+          </article>
+
+          <article class="card">
+            <img
+              class="card-img"
+              src="./assets/project-md.jpg"
+              srcset="
+                ./assets/project-xlg.jpg 1830w,
+                ./assets/project-lg.jpg  1610w,
+                ./assets/project-xmd.jpg 1350w,
+                ./assets/project-sm.jpg   840w,
+                ./assets/project-xsm.jpg  581w
+              "
+              sizes="(min-width: 1720px) calc(33.28vw - 85px), (min-width: 1020px) calc(50vw - 80px), (min-width: 540px) calc(100vw - 120px), (min-width: 500px) calc(-100vw + 920px), calc(88.89vw - 27px)"
+              alt=""
+            />
+
             <div class="card-info">
               <div class="card-header">
                 <h3 class="card-title title-secondary">Project name</h3>
+
                 <div class="card-links">
                   <a href="#" class="github-link icon" target="_blank"></a>
                   <a href="#" class="external-link icon" target="_blank"></a>
                 </div>
               </div>
+
               <p class="card-text">
                 Short description of the project. Just a couple sentences will
                 do.
               </p>
             </div>
-          </div>
-          <div class="card">
-            <img class="card-img" src="./assets/placeholder-4.jpg" alt="" />
+          </article>
+
+          <article class="card">
+            <img
+              class="card-img"
+              src="./assets/project-md.jpg"
+              srcset="
+                ./assets/project-xlg.jpg 1830w,
+                ./assets/project-lg.jpg  1610w,
+                ./assets/project-xmd.jpg 1350w,
+                ./assets/project-sm.jpg   840w,
+                ./assets/project-xsm.jpg  581w
+              "
+              sizes="(min-width: 1720px) calc(33.28vw - 85px), (min-width: 1020px) calc(50vw - 80px), (min-width: 540px) calc(100vw - 120px), (min-width: 500px) calc(-100vw + 920px), calc(88.89vw - 27px)"
+              alt=""
+            />
+
             <div class="card-info">
               <div class="card-header">
                 <h3 class="card-title title-secondary">Project name</h3>
+
                 <div class="card-links">
                   <a href="#" class="github-link icon" target="_blank"></a>
                   <a href="#" class="external-link icon" target="_blank"></a>
                 </div>
               </div>
+
               <p class="card-text">
                 Short description of the project. Just a couple sentences will
                 do.
               </p>
             </div>
-          </div>
-          <div class="card">
-            <img class="card-img" src="./assets/placeholder-5.jpg" alt="" />
+          </article>
+
+          <article class="card">
+            <img
+              class="card-img"
+              src="./assets/project-md.jpg"
+              srcset="
+                ./assets/project-xlg.jpg 1830w,
+                ./assets/project-lg.jpg  1610w,
+                ./assets/project-xmd.jpg 1350w,
+                ./assets/project-sm.jpg   840w,
+                ./assets/project-xsm.jpg  581w
+              "
+              sizes="(min-width: 1720px) calc(33.28vw - 85px), (min-width: 1020px) calc(50vw - 80px), (min-width: 540px) calc(100vw - 120px), (min-width: 500px) calc(-100vw + 920px), calc(88.89vw - 27px)"
+              alt=""
+            />
+
             <div class="card-info">
               <div class="card-header">
                 <h3 class="card-title title-secondary">Project name</h3>
+
                 <div class="card-links">
                   <a href="#" class="github-link icon" target="_blank"></a>
                   <a href="#" class="external-link icon" target="_blank"></a>
                 </div>
               </div>
+
               <p class="card-text">
                 Short description of the project. Just a couple sentences will
                 do.
               </p>
             </div>
-          </div>
-          <div class="card">
-            <img class="card-img" src="./assets/placeholder-6.jpg" alt="" />
+          </article>
+
+          <article class="card">
+            <img
+              class="card-img"
+              src="./assets/project-md.jpg"
+              srcset="
+                ./assets/project-xlg.jpg 1830w,
+                ./assets/project-lg.jpg  1610w,
+                ./assets/project-xmd.jpg 1350w,
+                ./assets/project-sm.jpg   840w,
+                ./assets/project-xsm.jpg  581w
+              "
+              sizes="(min-width: 1720px) calc(33.28vw - 85px), (min-width: 1020px) calc(50vw - 80px), (min-width: 540px) calc(100vw - 120px), (min-width: 500px) calc(-100vw + 920px), calc(88.89vw - 27px)"
+              alt=""
+            />
+
             <div class="card-info">
               <div class="card-header">
                 <h3 class="card-title title-secondary">Project name</h3>
+
                 <div class="card-links">
                   <a href="#" class="github-link icon" target="_blank"></a>
                   <a href="#" class="external-link icon" target="_blank"></a>
                 </div>
               </div>
+
               <p class="card-text">
                 Short description of the project. Just a couple sentences will
                 do.
               </p>
             </div>
-          </div>
+          </article>
         </div>
       </main>
+
       <footer class="footer">
         <div class="footer-info">
           <h2 class="footer-title title-primary">Contact me</h2>
+
           <div class="footer-text">
             <p>
               Please get in touch if you think our work could be mutually
@@ -166,22 +274,18 @@
               <p class="mail-contact">emailexample123@gmail.com</p>
             </div>
           </div>
+
           <div class="footer-links">
             <a href="#" class="github-link icon"></a>
             <a href="#" class="linkedin-link icon"></a>
             <a href="#" class="x-link icon"></a>
           </div>
         </div>
+
         <picture class="footer-img">
-          <source
-            media="(max-width: 1000px)"
-            srcset="./assets/placeholder-2.jpg"
-          />
-          <source
-            media="(max-width: 1700px)"
-            srcset="./assets/placeholder-about-small.jpg"
-          />
-          <img src="./assets/placeholder-3.jpg" alt="" />
+          <source media="(max-width: 1000px)" srcset="./assets/footer-sm.jpg" />
+          <source media="(max-width: 1700px)" srcset="./assets/footer-md.jpg" />
+          <img src="./assets/footer-lg.jpg" alt="" />
         </picture>
       </footer>
     </div>

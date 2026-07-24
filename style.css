@@ -161,6 +161,8 @@ a.x-link {
 
 .card-img {
   max-width: 100%;
+
+  object-fit: center;
 }
 
 .card-info {
@@ -497,7 +499,7 @@ a.external-link {
     object-fit: cover;
     object-position: center;
 
-    margin-bottom: -10px;
+    margin-bottom: 10px;
   }
 
   .footer-img source {
@@ -577,6 +579,10 @@ a.external-link {
     font-size: 26px;
   }
 
+  .footer-img img {
+    margin-bottom: -10px;
+  }
+
   .footer-contacts {
     font-size: 18px;
   }
@@ -596,7 +602,7 @@ a.external-link {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 350px) {
   .container {
     padding: 30px;
     padding-bottom: 0;
