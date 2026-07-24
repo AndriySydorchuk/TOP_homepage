@@ -175,7 +175,7 @@ a.x-link {
 .card-img {
   max-width: 100%;
 
-  object-fit: center;
+  object-position: center;
 }
 
 .card-info {
